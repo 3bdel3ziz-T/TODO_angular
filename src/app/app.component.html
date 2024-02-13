@@ -1,0 +1,15 @@
+<div class="container">
+  <add-to-do (EmitTaskTxt)="addTask($event)"></add-to-do>
+  <div class="options">
+    <filter-tasks></filter-tasks>
+    <clear-btn></clear-btn>
+  </div>
+  <div class="list">
+    <todo-item
+    *ngFor="let task of tasksList; let i = index; trackBy: trackChanges"
+      [task]="task"
+      (checkStatus)="showSuccessMsg($event)"
+      ></todo-item>
+  </div>
+</div>
+<ng-toast></ng-toast>
