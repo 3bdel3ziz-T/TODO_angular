@@ -241,7 +241,6 @@ $disabled: #c3c8de;
   position: relative;
   display: flex;
   align-items: center;
-  width: 70px;
   height: 30px;
   border: none;
   padding: 0px 10px;
@@ -253,6 +252,9 @@ $disabled: #c3c8de;
   border-radius: 10px;
   box-shadow: 3px 3px 0px #7c2ae897;
   transition: all 350ms;
+  transform-origin: center center;
+  width: 70px;
+  border-radius: 30px;
   transform-origin: center center;
   @media (max-width: 475px) {
     width: 30px;
@@ -267,11 +269,9 @@ $disabled: #c3c8de;
     transition: all 400ms;
   }
   &:hover {
+    width: 70px;
     color: transparent;
-    padding-left: 30px;
-    margin-right: 12px;
-    width: 50px;
-    border-radius: 30px;
+
     @media (max-width: 475px) {
       width: 30px;
       margin: 0;
